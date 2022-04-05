@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(173, 173, 166);
+}
+.container {
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 600px;
+  background-color: rgb(173, 173, 166);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.midle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 10px;
+  background-color: rgb(39, 32, 32);
+  z-index: 1;
+}
+.item {
+  height: 80%;
+  width: 100px;
+  /* background-color: burlywood; */
+}
+.circle {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 50%;
+}
+.half {
+  height: 50%;
+  /* background-color: blue; */
+  /* border-bottom: solid 10px brown; */
+}
+.line {
+  margin: auto;
+  width: 2px;
+  height: 140px;
+  background-color: black;
+}
+
+.box4 {
+  animation: left 3s linear;
+  /* animation-duration: 6s; */
+  animation-iteration-count: infinite;
+}
+.box {
+  animation: right 3s linear;
+  animation-iteration-count: infinite;
+}
+.one {
+  animation: one 3s;
+  animation-iteration-count: infinite;
+}
+.two {
+  animation: two 6s;
+  animation-iteration-count: infinite;
+}
+.three {
+  animation: three 6s;
+  animation-iteration-count: infinite;
+}
+.four {
+  animation: four 6s;
+  animation-iteration-count: infinite;
+}
+.five {
+  animation: five 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes left {
+  25% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right {
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* @keyframes one {
+  25% {
+    background-color: blue;
+  }
+  75% {
+    background-color: black;
+  }
+}
+@keyframes five {
+  0% {
+    background-color: black;
+  }
+  26% {
+    background-color: black;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: black;
+  }
+} */
